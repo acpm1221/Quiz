@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: width 0.3s ease;
+}
+
+.time {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Feedback styles */
+.feedback {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+    .quiz {
+        width: 90%; /* Make the quiz container take 90% of the viewport width */
+    }
+
+    .question {
+        font-size: 18px; /* Slightly smaller font size for questions */
+    }
+
+    .btn {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px; /* Adjust padding for smaller buttons */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 401px) and (max-width: 768px) {
+    .quiz {
+        width: 80%; /* Adjust width for tablet screens */
+    }
+
+    .time {
+        font-size: 18px; /* Maintain font size for the timer */
+    }
+
+    .question {
+        font-size: 20px; /* Maintain question font size */
+    }
+
+    .btn {
+        font-size: 16px; /* Maintain button text size */
+        padding: 10px; /* Maintain button padding */
+    }
+}
+
+/* Large Mobile / Small Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .quiz {
+        width: 70%; /* Further adjust for larger mobile and small tablet screens */
+    }
+
+    .time {
+        font-size: 18px; /* Maintain font size for the timer */
+    }
+
+    .question {
+        font-size: 22px; /* Slightly larger question font size */
+    }
+}
